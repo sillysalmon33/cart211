@@ -1,0 +1,68 @@
+TITLE on all pages = 
+Origins of the Web
+
+NAV on all pages=
+Web 1.0 | Web 2.0 | Web 3.0 | Web 4.0
+
+H1 on all the pages=
+Where does the Web come from?
+
+FOOTER on all the pages=
+© your name, cart 211, fall 2025, assessment 1
+
+PAGE 1******************************************************************
+H2*
+The Static Web – Web 1.0
+(image: apple-lisa.jpg)
+      
+MAIN*
+Web 1.0 is often described as the “read-only” Web. It was characterized by static web pages with very limited user interaction. Most websites served as online brochures or repositories of information, where users could view content but could not easily contribute or modify it.
+This early stage of the Web was dominated by institutional and corporate websites that provided information but offered little opportunity for collaboration or participation.
+
+
+PAGE 2***********************************************************************
+H2*
+The Social Web – Web 2.0
+(image: social_media.jpg)
+MAIN*
+Web 2.0 marks the shift to the interactive and participatory Web. It enabled users not only to consume content but also to create, share, and collaborate online.
+
+The Web became a space of collaboration and user-generated content, often referred to as the Social Web.
+
+
+PAGE 3***********************************************************************
+H2*
+The Semantic Web – Web 3.0
+(image: cryptopunk.jpg)
+Source: nftnow.com
+MAIN*
+Web 3.0, also called the Semantic Web, is about making data on the internet machine-readable and interconnected. 
+In another, more popular sense, Web3 also refers to a decentralized web built on blockchain technology, where ownership, privacy, and digital assets (NFTs, cryptocurrencies, DAOs) play a central role.
+
+
+PAGE 4***********************************************************************
+H2*
+The Intelligent Web – Web 4.0
+(image: ChatGPT-Logo.gif)
+MAIN*
+Web 4.0 is often envisioned as the “ubiquitous Web” or “Intelligent Web”, where artificial intelligence and the Internet of Things (IoT) are fully integrated into daily life.
+In this stage, the Web becomes a seamless environment in which humans, devices, and intelligent agents interact continuously. Personalized assistants, autonomous systems, and real-time machine learning make the Web highly adaptive and context-aware.
+
+
+
+
+
+Dont put in the page ********************************
+Image credits:
+Unsplash:
+adem
+coinhako
+museums-victoria
+sara-kurfess
+
+Wikipedia:
+ChatGPT-Logo
+
+Text credits:
+ChatGPT
+
