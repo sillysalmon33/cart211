@@ -8,7 +8,7 @@ H1 on all the pages=
 Where does the Web come from?
 
 FOOTER on all the pages=
-© your name, cart 211, fall 2025, assessment 1
+© your name, cart 211, fall 2026, assessment 1
 
 PAGE 1******************************************************************
 H2*
@@ -16,8 +16,7 @@ The Static Web – Web 1.0
 (image: apple-lisa.jpg)
       
 MAIN*
-Web 1.0 is often described as the “read-only” Web. It was characterized by static web pages with very limited user interaction. Most websites served as online brochures or repositories of information, where users could view content but could not easily contribute or modify it.
-This early stage of the Web was dominated by institutional and corporate websites that provided information but offered little opportunity for collaboration or participation.
+Web 1.0 is often described as the “read-only” Web. It was characterized by static web pages with very limited user interaction. Most websites served as online brochures or repositories of information, where users could view content but could not easily contribute or modify it.This early stage of the Web was dominated by institutional and corporate websites that provided information but offered little opportunity for collaboration or participation.
 
 
 PAGE 2***********************************************************************
