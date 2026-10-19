@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snow Video</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 20px;
+        }
+
+        /*video size buttons*/
+        /*adds space below the group of buttons*/
+        .size-control {
+            margin-bottom: 15px;
+        }
+
+        /* style all buttons inside the size control section */
+        .size-control button {
+            padding: 8px, 14px;
+            margin: 3px;
+            cursor: pointer;
+        }
+
+        /*-------------------------
+        General Video player styles
+        --------------------------*/
+        video {
+            display: block;
+            width: 100%;
+            max-width: 100%;
+            aspect-ratio: 16 / 9;
+            height: auto;
+            background-color: black;
+            transition: width 0.3s ease;
+            /* makes changes in the video appear smoothly*/
+        }
+
+        /*------------
+    Video Sizes
+    -------------*/
+
+        video.small {
+            width: 320px;
+        }
+
+        video.medium {
+            width: 480px;
+        }
+
+        video.large {
+            width: 720px;
+        }
+
+        video.full {
+            width: 100%;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <!---->
+    <h1>Snowy Video</h1>
+    <p>Watch The Video</p>
+
+    <!-------------------------
+    Video Sizes Control Buttons
+    -------------------------->
+
+    <div class="size-control">
+        <strong>video size:</strong>
+
+        <!--When clicked calls a js function that changes the video width to 320px-->
+        <button onclick="changeSize('small')">
+            small
+        </button>
+        <!--When clicked calls a js function that changes the video width to 480px-->
+        <button onclick="changeSize('medium')">
+            medium
+        </button>
+        <!--When clicked calls a js function that changes the video width to 720px-->
+        <button onclick="changeSize('large')">
+            large
+        </button>
+
+        <!--When clicked calls a js function that changes the video width to avalible content width-->
+        <button onclick="changeSize('full')">
+            full
+        </button>
+
+    </div>
+
+    <!----------
+    Video Player
+     ------------>
+
+    <!--id=myvideo gives the video a unique name that js can use to find it
+
+class=full makes the video start at full width
+
+controls display the built in play, pause volume controls-->
+
+    <video id="myvideo" class="full" controls>
+        <source src="video.mp4" type="video/mp4">
+        Sorry, Your Browser Cannot Play This Video
+    </video>
+
+    <!--JS: changes video size-->
+
+    <script>
+        //Runs whenever a size button is clicked
+        //the word size recieves the value from the button such as small or large
+        function changeSize(size) {
+            //finds the video element using its unique id
+            const video = document.getElementById("myvideo");
+
+            //remove all 4 possible size classes so the old size settings wont remain active
+            video.classList.remove("small", "medium", "large", "full",);
+
+            //adds the new size class seclected, css then applies the matching width
+            video.classList.add(size);
+        }
+
+
+    </script>
+
+</body>
+
+</html>

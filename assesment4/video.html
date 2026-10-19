@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snowy Video</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 20px;
+        }
+
+        /* styles the video player*/
+        video {
+            display: block;
+            /* Places the video on its own line*/
+            width: 100%;
+            /* makes the video fill the avalable content width */
+            aspect-ratio: 16 / 9;
+            /*sets a standart widescreen video ratio */
+            height: auto;
+            /* lets the browser to calculate the hight automatically*/
+            background-color: black;
+            /*can you guess */
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Snowy Video</h1>
+    <p>Watch The Video Below</p>
+
+    <!--creates avideo player with built in playback controls-->
+    <video controls>
+        <!--loads an mp4 file from the same holder as the html-->
+        <source src="video.mp4" type="video/mp4">
+        <!--Displays this message if the browser cant play the video-->
+        Sorry, Your Browser Cannot Play The Video
+    </video>
+</body>
+
+</html>
