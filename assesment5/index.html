@@ -7,17 +7,208 @@
     <title>Humans of New York</title>
     <meta name="description"
         content="A Humans of New York Story - A course exercise (CART211 exploring semantic HTML CSS Grid, and mobile queries)">
+    <!--open graphics metadata controls how the page looks on social media-->
     <meta property="og:type" content="article">
     <meta property="og:title" content="Humans of New York">
     <meta property="og:description" content="A Humans of New York Story presented for CART 211">
+    <!--page url and image din social media preview-->
     <meta property="og:url" content="URL">
-    <meta property="og:image" content="git hub image link">
+    <meta property="og:image"
+        content="https://github.com/sillysalmon33/cart211/blob/main/assesment5/assets/america_pageant.jpg">
+
+    <!--the dimensions and alternative description of the previous image-->
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="portrait associated with america pageant Story">
+
+    <!--twitter card meta data controls the apearance on twitter-->
+    <meta name="twitter:card" content="summart_large_image">
+    <meta name="twitter:title" content="Humans of New York">
+    <meta name="twitter:description" content="A humans of New York Story">
+    <meta name="twitter:image" content="https://github.com/sillysalmon33/cart211/assesment5/assets/america_pageant.jpg">
+
+    <!--Identifies the prefered URL for this page to search engines-->
+    <link rel="canonical" href="https://github.com/sillysalmon33/cart211/blob/main/assesment5/index.html">
+
+    <!--browser icon-->
+    <link rel="icon" href="assets/favicon.ico">
+
+    <meta name="author" content="Kosta">
+    <meta name="CopyRight" content="Kosta, Student Project, 2026">
+
+    <link rel="Stylesheet" href="default.css">
+
+    <!--loads google fonts in the css-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!--loads font awsome, a library of ready made icons-->
+    <!--the social media icons and hamburger menu use this library-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-    <nav>
+    <!--CSS uses #wrapper to control the overall width and center the content-->
+    <div id="Wrapper">
+        <header>
+            <nav>
+                <div class="logo">
+                    <a href="#">
+                        <img src="assets/logo.png" alt="Logo" width="110" height="50">
+                    </a>
+                </div>
 
-    </nav>
+                <div class="menu1">
+                    <a href="story1.html" class="menu1_active">STORIES</a>
+                    <a href="#" class="menu1_active">SERIES</a>
+                    <a href="index.html" class="menu1_active">ABOUT</a>
+                </div>
+            </nav>
+
+        </header>
+
+        <section>
+            <article>
+                <h1>Humans of New York</h1>
+
+                <p class="intro"> Humans of New York began as Brandon Stanton photography project in 2010. The initial
+                    goal was to photograph 10,000 New
+                    Yorkers on the street, and create an exhaustive catalogue of the city’s inhabitants.
+                </p>
+                <p class="intro"> Taken together, these portraits and captions became the subject of a vibrant blog.
+                    HONY now has over twenty million
+                    followers on social media, and provides a worldwide audience with daily glimpses into the lives of
+                    strangers on the
+                    streets of New York City.
+                </p>
+                <!--image gallary: the pict class createes the css grid layout. each figure is one gallery item.
+                classes im1 through im14 let css position images at diffferent sizes to create an asymetrical collage.-->
+                <div class="pict">
+                    <!--figure 1:image link and caption-->
+                    <figure class="im1">
+                        <a href="story1.html">
+                            <img src="assets/america_pageant.jpg" class="im" alt="America Pageant Portrait"></a>
+                        <!--caption over the image ussing css-->
+                        <div class="hover-text"> America Pageant</div>
+                    </figure>
+
+
+                    <!--Figure 2-->
+                    <figure class="im2">
+                        <a href="story1.html">
+                            <img src="assets/end_of_life_patient.jpg" class="im" alt="End of Life Patient Portrait"></a>
+                        <!--caption over the image ussing css-->
+                        <div class="hover-text"> End of Life Patient</div>
+                    </figure>
+
+
+                    <!--Figure 3-->
+                    <figure class="im3">
+                        <a href="story1.html">
+                            <img src="assets/Chipwich_guy.jpg" class="im" alt="Chipwich guy Portrait"></a>
+                        <!--caption over the image ussing css-->
+                        <div class="hover-text"> Chipwich guy</div>
+                    </figure>
+
+
+                    <!--Figure 4-->
+                    <figure class="im4">
+                        <a href="story1.html">
+                            <img src="assets/fake_sport.jpg" class="im" alt="Fake Sport portrait"></a>
+                        <!--caption over the image ussing css-->
+                        <div class="hover-text"> Fake Sport</div>
+                    </figure>
+
+                    <!--Figure 5-->
+                    <figure class="im5">
+                        <a href="story1.html">
+                            <img src="assets/gettin_married.jpg" class="im" alt="Getting Married portrait"></a>
+                        <!--caption over the image ussing css-->
+                        <div class="hover-text"> Getting Married</div>
+                    </figure>
+
+                    <!--Figure 6-->
+                    <figure class="im6">
+                        <a href="story1.html">
+                            <img src="assets/homework.jpg" class="im" alt="homework portrait"></a>
+                        <!--caption over the image ussing css-->
+                        <div class="hover-text"> homework</div>
+                    </figure>
+
+                    <!--Figure 7-->
+                    <figure class="im7">
+                        <a href="story1.html">
+                            <img src="assets/invisibility.jpg" class="im" alt="invisibility story portrait"></a>
+                        <!--caption over the image ussing css-->
+                        <div class="hover-text"> invisibilityt</div>
+                    </figure>
+
+                    <!--Figure 8-->
+                    <figure class="im8">
+                        <a href="story1.html">
+                            <img src="assets/Right_and_wrong.jpg" class="im" alt="Right and Wrong portrait"></a>
+                        <!--caption over the image ussing css-->
+                        <div class="hover-text"> Right and Wrong</div>
+                    </figure>
+
+                    <!--Figure 9-->
+                    <figure class="im9">
+                        <a href="story1.html">
+                            <img src="assets/sketchbook.jpg" class="im" alt="sketchbook portrait"></a>
+                        <!--caption over the image ussing css-->
+                        <div class="hover-text"> sketchbook</div>
+                    </figure>
+
+                    <!--Figure 10-->
+                    <figure class="im10">
+                        <a href="story1.html">
+                            <img src="assets/the_algorithm.jpg" class="im" alt="The Algorithim portrait"></a>
+                        <!--caption over the image ussing css-->
+                        <div class="hover-text"> The Algorithim</div>
+                    </figure>
+
+                    <!--Figure 11-->
+                    <figure class="im11">
+                        <a href="story1.html">
+                            <img src="assets/The_Empire.jpg" class="im" alt="The Empire portrait"></a>
+                        <!--caption over the image ussing css-->
+                        <div class="hover-text"> The Empire</div>
+                    </figure>
+
+                    <!--Figure 12-->
+                    <figure class="im12">
+                        <a href="story1.html">
+                            <img src="assets/Mardi-Gras.jpg" class="im" alt="Mardi Gras portrait"></a>
+                        <!--caption over the image ussing css-->
+                        <div class="hover-text"> Mardi Grast</div>
+                    </figure>
+
+                    <!--Figure 13-->
+                    <figure class="im13">
+                        <a href="story1.html">
+                            <img src="assets/they_loved_me.jpg" class="im" alt="They loved me portrait"></a>
+                        <!--caption over the image ussing css-->
+                        <div class="hover-text"> They loved me</div>
+                    </figure>
+
+                    <!--Figure 14-->
+                    <figure class="im14">
+                        <a href="story1.html">
+                            <img src="assets/exhausting_to_me.jpg" class="im" alt="Exhausting to Me portrait"></a>
+                        <!--caption over the image ussing css-->
+                        <div class="hover-text"> Exhausting to Me</div>
+                    </figure>
+                </div>
+                <!--End Of image Gallary-->
+            </article>
+        </section>
+
+
+
+    </div>
 
 </body>
 
