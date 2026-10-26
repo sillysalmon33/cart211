@@ -9,7 +9,7 @@ repository for cart211
 
 - [Ocean Vuong](https://sillysalmon33.github.io/cart211/Assessement3/index.html)
 
-# assigment 5
+# Assigment 5
 
 - [Humans of New York](https://sillysalmon33.github.io/cart211/assesment5/index.html)
 
