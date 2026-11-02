@@ -1,0 +1,401 @@
+
+<!DOCTYPE html>
+<!-- Tells the browser that this document uses HTML5. -->
+
+<html lang="en">
+<!-- The page content is written in English. -->
+
+<head>
+    <!-- The head contains information about the page, not the visible page content. -->
+
+    <!-- Sets the character encoding so special characters display correctly. -->
+    <meta charset="UTF-8">
+
+    <!-- The title appears in the browser tab. -->
+    <title>Humans of New York | CART 211 Assessment 5</title>
+
+    <!-- A short description of the page used by search engines. -->
+    <meta name="description" content="A Humans of New York story: “Ms. America pageant”. Course exercise (CART 211) exploring semantic HTML, CSS grid, and accessible media presentation.">
+
+    <!-- Open Graph metadata controls how the page looks when shared on social media. -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Humans of New York — “Ms. America pageant”">
+    <meta property="og:description" content="A Humans of New York story presented for CART 211.">
+
+    <!-- The page URL and image used in social media previews. -->
+    <meta property="og:url" content="https://hybrid.concordia.ca/yourname/hony/ms-america.html">
+    <meta property="og:image" content="https://hybrid.concordia.ca/yourname/hony/assets/america_pageant_og.jpg">
+
+    <!-- The dimensions and alternative description of the preview image. -->
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Portrait associated with the Ms. America pageant story">
+
+    <!-- Twitter card metadata controls the appearance of shared links on X. -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Humans of New York — “Ms. America pageant”">
+    <meta name="twitter:description" content="A Humans of New York story presented for CART 211.">
+    <meta name="twitter:image" content="https://hybrid.concordia.ca/yourname/hony/assets/america_pageant_og.jpg">
+
+    <!-- Identifies the preferred URL for this page to search engines. -->
+    <link rel="canonical" href="https://hybrid.concordia.ca/yourname/hony/ms-america.html">
+
+    <!-- Adds a small icon to the browser tab. -->
+    <link rel="icon" href="assets/favicon.ico">
+
+    <!-- Identifies the author and copyright information. -->
+    <meta name="author" content="Your Name">
+    <meta name="copyright" content="© Your Name, student project, 2025">
+
+    <!-- Connects this HTML file to the external CSS stylesheet. -->
+    <!-- The CSS controls colours, fonts, spacing, layout, and responsiveness. -->
+    <link rel="stylesheet" href="default.css">
+
+    <!-- Makes the page adapt to the width of mobile devices. -->
+    <!-- Without this, mobile browsers may display the page as if it were desktop-sized. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Loads Google Fonts that can be used in the CSS stylesheet. -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Varela+Round&display=swap" rel="stylesheet">
+
+    <!-- Establishes an early connection to Google Fonts to help them load faster. -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+    <!-- Loads Libre Franklin, another font used by the website. -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100;0,400;0,900;1,100;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Loads Font Awesome, a library of ready-made icons. -->
+    <!-- The social media icons and hamburger menu use this library. -->
+     <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    >
+
+</head>
+
+<body>
+    <!-- Everything inside the body is part of the visible webpage. -->
+
+    <!-- Main wrapper: groups the page content together. -->
+    <!-- CSS uses #wrapper to control the overall width and centre the content. -->
+    <div id="wrapper">
+
+        <!-- HEADER: contains the logo and navigation menu. -->
+        <header>
+
+            <!-- NAV: contains links that help visitors move around the website. -->
+            <nav>
+
+                <!-- Logo: clicking the image takes the visitor to the linked page. -->
+                <div class="logo">
+                    <a href="#">
+                        <!-- The alt attribute describes the image for screen readers. -->
+                        <img src="assets/logo.png" alt="Logo" width="110" height="50">
+                    </a>
+                </div>
+
+                <!-- Navigation links.
+                     CSS displays these horizontally on desktop
+                     and as a menu panel on smaller screens. -->
+                <div class="menu1">
+
+                    <!-- The X button closes the mobile navigation menu. -->
+                    <button type="button" class="close-menu" aria-label="Close navigation menu">
+                        &times;
+                    </button>
+
+                    <!-- Links to other pages of the website. -->
+                    <a href="storie1.html" class="menuI">STORIES</a>
+
+                    <!-- This link currently points to the top of the current page. -->
+                    <a href="#" class="menuI">SERIES</a>
+
+                    <!-- The active class can be styled differently in the CSS. -->
+                    <a href="index.html" class="menuI_active">ABOUT</a>
+
+                </div>
+
+                <!-- Hamburger button: displayed on mobile and tablet screens. -->
+                <div class="hamburger-menu">
+
+                    <button type="button" aria-label="Open navigation menu">
+                        <!-- Font Awesome displays the three horizontal menu lines. -->
+                        <span class="fa fa-bars" aria-hidden="true"></span>
+                    </button>
+
+                </div>
+
+            </nav>
+        </header>
+
+        <!-- SECTION: groups the main content of the page. -->
+        <section>
+
+            <!-- ARTICLE: contains a related piece of written and visual content. -->
+            <article>
+
+                <!-- H1 is the main heading of the page. -->
+                <!-- A page generally uses one main H1 heading. -->
+                <h1>Humans of New York</h1>
+
+                <!-- Introductory paragraph.
+                     The intro class lets CSS apply specific font and spacing styles. -->
+                <p class="intro">
+                    Humans of New York began as Brandon Stanton photography project in 2010.
+                    The initial goal was to photograph 10,000 New Yorkers on the street,
+                    and create an exhaustive catalogue of the city’s inhabitants.
+                </p>
+
+                <!-- A second introductory paragraph explaining the project. -->
+                <p class="intro">
+                    Taken together, these portraits and captions became the subject of a
+                    vibrant blog. HONY now has over twenty million followers on social
+                    media, and provides a worldwide audience with daily glimpses into
+                    the lives of strangers on the streets of New York City.
+                </p>
+
+                <!-- IMAGE GALLERY:
+                     The pict class creates the CSS Grid layout.
+                     Each figure is one gallery item.
+                     Classes im1 through im14 let CSS position images
+                     at different sizes to create an asymmetrical collage. -->
+                <div class="pict">
+
+                    <!-- FIGURE 1: image, link, and caption. -->
+                    <figure class="im1">
+                        <!-- Clicking the image opens the linked HTML page. -->
+                        <a href="recette1.html">
+                            <img src="assets/america_pageant.jpg" class="im" alt="Ms. America pageant portrait">
+                        </a>
+
+                        <!-- Caption shown over the image using CSS. -->
+                        <div class="hover-text">america pageant</div>
+                    </figure>
+
+                    <!-- FIGURE 2 -->
+                    <figure class="im2">
+                        <a href="projet1.html">
+                            <img src="assets/Chipwich_guy.jpg" class="im" alt="Chipwich guy portrait">
+                        </a>
+                        <div class="hover-text">Chipwich guy</div>
+                    </figure>
+
+                    <!-- FIGURE 3 -->
+                    <figure class="im3">
+                        <a href="projet1.html">
+                            <img src="assets/end_of_life_patient.jpg" class="im" alt="End of life patient portrait">
+                        </a>
+                        <div class="hover-text">end of life patient</div>
+                    </figure>
+
+                    <!-- FIGURE 4 -->
+                    <figure class="im4">
+                        <a href="projet1.html">
+                            <img src="assets/fake_sport.jpg" class="im" alt="Fake sport story portrait">
+                        </a>
+                        <div class="hover-text">fake sport</div>
+                    </figure>
+
+                    <!-- FIGURE 5 -->
+                    <figure class="im5">
+                        <a href="projet1.html">
+                            <img src="assets/gettin_married.jpg" class="im" alt="Getting married story portrait">
+                        </a>
+                        <div class="hover-text">gettin married</div>
+                    </figure>
+
+                    <!-- FIGURE 6 -->
+                    <figure class="im6">
+                        <a href="projet1.html">
+                            <img src="assets/homework.jpg" class="im" alt="Homework story portrait">
+                        </a>
+                        <div class="hover-text">homework</div>
+                    </figure>
+
+                    <!-- FIGURE 7 -->
+                    <figure class="im7">
+                        <a href="projet1.html">
+                            <img src="assets/invisibility.jpg" class="im" alt="Invisibility story portrait">
+                        </a>
+                        <div class="hover-text">invisibility</div>
+                    </figure>
+
+                    <!-- FIGURE 8 -->
+                    <figure class="im8">
+                        <a href="projet1.html">
+                            <img src="assets/Right_and_wrong.jpg" class="im" alt="Right and wrong story portrait">
+                        </a>
+                        <div class="hover-text">Right and wrong</div>
+                    </figure>
+
+                    <!-- FIGURE 9 -->
+                    <figure class="im9">
+                        <a href="projet1.html">
+                            <img src="assets/sketchbook.jpg" class="im" alt="Sketchbook story portrait">
+                        </a>
+                        <div class="hover-text">sketchbook</div>
+                    </figure>
+
+                    <!-- FIGURE 10 -->
+                    <figure class="im10">
+                        <a href="projet1.html">
+                            <img src="assets/the_algorithm.jpg" class="im" alt="The algorithm story portrait">
+                        </a>
+                        <div class="hover-text">the_algorithm</div>
+                    </figure>
+
+                    <!-- FIGURE 11 -->
+                    <figure class="im11">
+                        <a href="projet1.html">
+                            <img src="assets/The_Empire.jpg" class="im" alt="The Empire story portrait">
+                        </a>
+                        <div class="hover-text">The Empire</div>
+                    </figure>
+
+                    <!-- FIGURE 12 -->
+                    <figure class="im12">
+                        <a href="projet1.html">
+                            <img src="assets/Mardi-Gras.jpg" class="im" alt="Mardi Gras story portrait">
+                        </a>
+                        <div class="hover-text">Mardi Gras</div>
+                    </figure>
+
+                    <!-- FIGURE 13 -->
+                    <figure class="im13">
+                        <a href="projet1.html">
+                            <img src="assets/they_loved_me.jpg" class="im" alt="They loved me story portrait">
+                        </a>
+                        <div class="hover-text">they loved me</div>
+                    </figure>
+
+                    <!-- FIGURE 14 -->
+                    <figure class="im14">
+                        <a href="projet1.html">
+                            <img src="assets/exhausting_to_me.jpg" class="im" alt="Exhausting to me story portrait">
+                        </a>
+                        <div class="hover-text">exhausting to me</div>
+                    </figure>
+
+                </div>
+                <!-- End of image gallery. -->
+
+            </article>
+        </section>
+
+        <!-- FOOTER: contains social media icons and project credits. -->
+        <footer>
+
+            <!-- Groups the social icons and credits together. -->
+        <section class="social-section">
+
+        <div class="social-icons">
+
+            <a href="https://facebook.com"
+               class="social facebook"
+               aria-label="Facebook">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+
+            <a href="https://instagram.com"
+               class="social instagram"
+               aria-label="Instagram">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a href="https://x.com"
+               class="social twitter"
+               aria-label="X">
+                <i class="fa-brands fa-x-twitter"></i>
+            </a>
+
+            <a href="https://tiktok.com"
+               class="social tiktok"
+               aria-label="TikTok">
+                <i class="fa-brands fa-tiktok"></i>
+            </a>
+
+            <a href="https://youtube.com"
+               class="social youtube"
+               aria-label="YouTube">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+
+            <a href="https://linkedin.com"
+               class="social linkedin"
+               aria-label="LinkedIn">
+                <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+
+            <a href="https://github.com"
+               class="social github"
+               aria-label="GitHub">
+                <i class="fa-brands fa-github"></i>
+            </a>
+
+        </div>
+    </section>
+                <!-- Credits identify the course project and source material. -->
+                <div class="credits">
+                    <p>
+                        © your name, cart 211, fall 2025, assessment 5,
+                        credits: humansofnyarchive.com
+                    </p>
+                </div>
+
+            </div>
+            <!-- End of social section. -->
+
+        </footer>
+        <!-- End of footer. -->
+
+    </div>
+    <!-- End of the main wrapper. -->
+
+
+    <!-- JAVASCRIPT:
+         Makes the mobile hamburger menu open and close.
+         JavaScript adds or removes a CSS class.
+         The CSS decides what the menu looks like when that class is present. -->
+
+    <script>
+
+        // Wait until the HTML document has finished loading.
+        // This ensures the buttons exist before JavaScript tries to select them.
+        document.addEventListener('DOMContentLoaded', () => {
+
+            // Find the hamburger button inside the mobile menu container.
+            const hamburgerButton =
+                document.querySelector('.hamburger-menu button');
+
+            // Find the X button used to close the navigation menu.
+            const closeButton =
+                document.querySelector('.close-menu');
+
+            // Find the container holding the navigation links.
+            const menu1 =
+                document.querySelector('.menu1');
+
+
+            // When the hamburger button is clicked,
+            // add the class "menu-deployed" to the navigation menu.
+            // The CSS uses this class to make the menu visible.
+            hamburgerButton.addEventListener('click', () => {
+                menu1.classList.add('menu-deployed');
+            });
+
+
+            // When the X button is clicked,
+            // remove "menu-deployed" so the menu closes.
+            closeButton.addEventListener('click', () => {
+                menu1.classList.remove('menu-deployed');
+            });
+
+        });
+
+    </script>
+    <!-- End of JavaScript. -->
+
+</body>
+</html>
