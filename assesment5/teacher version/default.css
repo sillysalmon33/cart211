@@ -1,0 +1,608 @@
+/* GENERAL PAGE STYLES */
+
+body {
+    font-family: Roboto, sans-serif;
+    /* makes the text very BOLD */
+    font-weight: 900;
+    /* Use the default font size as the reference size */
+    font-size: 1em;
+    padding: 0;
+    margin: 0;
+}
+
+.menu1 {
+    display: flex;
+    background: white;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu1 a {
+    display: block;
+}
+
+/* Hide the hamburger menu by default on desktop */
+.hamburger-menu {
+    display: none;
+    /* The mobile media query will disply it */
+    align-items: center;
+    /* vertically center its contents when using Flexbox */
+    justify-content: center;
+    /* horizontally center its contents */
+}
+
+.hamburger-menu button {
+    background: none;
+    /* removes the default BG for the button */
+    border: none;
+    font-size: 2em;
+    color: gray;
+}
+
+.hamburger-menu button .fa-bars {
+    cursor: pointer;
+}
+
+.close-menu {
+    display: none;
+}
+
+/* MAIN CONTENT AND HEADINGS */
+
+#wrapper {
+    width: 90%;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: left;
+    /* Make the heading 4 times the base font size */
+    font-size: 4em;
+    /* add space below the heading */
+    margin-bottom: 1em;
+}
+
+h2 {
+    margin-top: 0px;
+    margin-bottom: 30px;
+    text-align: right;
+    font-size: 20px;
+    color: darkgray;
+
+}
+
+.stories_title {
+    text-align: right;
+    font-size: 3em;
+}
+
+.intro {
+    font-size: 2em;
+    margin-bottom: 1em;
+    text-align: justify;
+}
+
+h3 {
+    margin-top: 0px;
+    margin-bottom: 10px;
+    text-align: left;
+    font-size: 20px;
+    color: darkgray;
+
+}
+
+/* NAVIGATION BAR */
+
+nav {
+    display: grid;
+    /* First column: 60% of the grid width.
+    second Column: the remaining available space */
+    grid-template-columns: 60% 1fr;
+
+    align-items: center;
+    font-size: 2em;
+    margin-top: 50px;
+}
+
+.logo {
+    text-align: left;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: darkgrey;
+}
+
+.menu1 {
+    text-align: right;
+}
+
+.menu1_active {
+    text-align: right;
+    color: gray;
+}
+
+/* SECTIONS AND ARTICLES */
+
+section {
+    margin-bottom: 30px;
+    text-align: justify;
+}
+
+/* Add extra space below the final paragraph */
+article p:last-child {
+    margin-bottom: 80px;
+}
+
+article h3 {
+    margin-bottom: 10px;
+    color: darkgray;
+}
+
+/* FOOTER */
+
+footer {
+    margin-top: 20px;
+    min-height: 30px;
+    font-size: 10px;
+    font-weight: lighter;
+    text-align: right;
+    font-style: italic;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Story Page Layout */
+/* Left column of the story page */
+.left_stories {
+    /* Span five grid columns, from line 1 to line 6 */
+    grid-column: 1 / 6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Right column containing the story text */
+.stories {
+    grid-column: 7 / 13;
+    margin: 0;
+    padding: 0;
+    font-size: 1.2em;
+    line-height: 1.5em;
+}
+
+.stories p {
+    margin-top: 0;
+}
+
+/* DESKTOP IMAGE GRID */
+
+.pict {
+    display: grid;
+    /* Create 12 equally sized columns  */
+    grid-template-columns: repeat(12, 1fr);
+    gap: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.im {
+    width: 100%;
+    height: auto;
+    /* request a square image area */
+    aspect-ratio: 1 / 1;
+    /* fill the area without stretching the image - the image may be cropped to fit */
+    object-fit: cover;
+    box-sizing: border-box;
+    display: block;
+}
+
+/* FIRST AND SECOND ROWS */
+
+/* Image 1: upper left position */
+.im1 {
+    /* span 3 columns */
+    grid-column: 1 / 4;
+    /* Span 2 rows */
+    grid-row: 1 / 3;
+}
+
+/* Image 2: beside image 1 */
+.im2 {
+    /* span the next 3 columns */
+    grid-column: 4 / 7;
+    /* Span the same 2 rows */
+    grid-row: 1 / 3;
+}
+
+/* Image 3: large rectangle on the right */
+.im3 {
+    /* span the 6 columns */
+    grid-column: 7 / 13;
+    /* Span 4 rows */
+    grid-row: 1 / 5;
+}
+
+/* Image 4: below image 1 */
+.im4 {
+    /* Use the same 3 columns as image 1 */
+    grid-column: 1 / 4;
+    /* Span row 3 and 4 */
+    grid-row: 3 / 5;
+}
+
+/* Image 5: below image 12 */
+.im5 {
+    /* Use the same 3 columns as image 2 */
+    grid-column: 4 / 7;
+    /* Span row 3 and 4 */
+    grid-row: 3 / 5;
+}
+
+/* THIRD AND FOURTH ROWS*/
+
+/* Large rectangle on the left */
+.im6 {
+    /* spans 6 columns */
+    grid-column: 1 / 7;
+    /* Span 4 rows */
+    grid-row: 5 / 9;
+}
+
+/* Image 7: upper image on the right */
+.im7 {
+    /* spans 3 columns */
+    grid-column: 7 / 10;
+    /* Span 2 rows */
+    grid-row: 5 / 7;
+}
+
+/* Image 8: beside image 7 */
+.im8 {
+    /* spans last 3 columns */
+    grid-column: 10 / 13;
+    /* align with image 7 */
+    grid-row: 5 / 7;
+}
+
+/* Image 9: below image 7 */
+.im9 {
+    /* use the same columns as image 7 */
+    grid-column: 7 / 10;
+    /* spans row 7 and 8 */
+    grid-row: 7 / 9;
+}
+
+/* Image 10: below image 8 */
+.im10 {
+    /* use the same columns as image 8 */
+    grid-column: 10 / 13;
+    /* span rows 7 and 8 */
+    grid-row: 7 / 9;
+}
+
+/* FINAL ROW: IMAGES 11 TO 14 */
+/* Apply shared positioning to images 11 and 13 */
+.im11,
+.im13 {
+    /* initially assigning the first 3 columns */
+    grid-column: 1 / 4;
+    /* Span the final 2 rows */
+    grid-row: 9 / 11;
+}
+
+.im12,
+.im14 {
+    /* Apply shared positioning to images 12 and 14 */
+    /* initially assigning the columns 4 through 6 */
+    grid-column: 4 / 7;
+    /* Span the final 2 rows */
+    grid-row: 9 / 11;
+}
+
+/* Override the starting position for image 13  */
+.im13 {
+    /* Place image 13 in columns 7 through 9 */
+    grid-column: 7 / 10;
+}
+
+/* Override the starting position for image 13 */
+.im14 {
+    /* Place image 14 in columns 10 through 12 */
+    grid-column: 10 / 13;
+}
+
+/* END OF THE DESKTOP IMAGE GRID */
+
+/* SOCIAL MEDIA LINKS */
+
+.social a {
+    color: gray;
+    font-size: 30px;
+}
+
+.social a:hover {
+    color: lightgrey;
+    font-size: 30px;
+}
+
+.social p {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    color: gray;
+    text-align: center;
+    /* Use 80% of the inherited font size */
+    font-size: 0.8em;
+}
+
+/* SOCIAL ICON CONTAINER */
+
+.social {
+    display: flex;
+    /* Stack the children vertically */
+    flex-direction: column;
+    /* Center the children horizontally */
+    align-items: center;
+    text-align: center;
+    /* Add 20px of vertical padding and no horizontal padding */
+    padding: 20px 0;
+    color: gray;
+}
+
+.social .fa {
+    font-size: 3em;
+    padding: 8px;
+    color: gray;
+}
+
+/* ICON ROW AND HOVER EFFECT */
+
+.icons-wrapper {
+    /* arrange icons in a row */
+    display: flex;
+    justify-content: center;
+    /* allows the icons to move to another line when needed */
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 100%;
+}
+
+.fa {
+    font-size: 6em;
+}
+
+.fa:hover {
+    color: lightgray;
+}
+
+.credits {
+    margin-top: 10px;
+    font-size: 1em;
+    width: 100%;
+}
+
+/* Responsive Design */
+
+/* Apply these styles when the screen is 1024px wide or less */
+@media (max-width: 1024px) {
+
+    /* Show the Hamburger menu on smaller screens */
+    .hamburger-menu {
+        display: flex;
+        align-items: center;
+    }
+
+    /* Set mobile menu link colors and decorations */
+    .menu1 a,
+    .menu1 a:hover {
+        text-decoration: none;
+        color: gray;
+        background-color: transparent;
+    }
+
+    /* Hide the menu until it is opened */
+    .menu1 {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: white;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* place the menu above most page content */
+        z-index: 1000;
+    }
+
+    /* Make each mobile menu link easier to tap */
+    .menu1 a {
+        padding: 20px;
+    }
+
+    /* Display the close menu button */
+    .close-menu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: 2em;
+        color: gray;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+
+    /* Apply this class when the mobile menu is opened */
+    .menu-deployed {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        /* Fill the viewport height */
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: white;
+        z-index: 1000;
+        padding-top: 50px;
+    }
+
+    /* Highlight the active menu link */
+    .menu1 .active {
+        color: black;
+    }
+
+    /* Remove any grid-column placement from the hamburger */
+    .hamburger-menu {
+        /* let the browser position it automatically in a grid */
+        grid-column: auto;
+    }
+
+    button {
+        border-width: 0px;
+        background-color: white;
+    }
+
+    /* Redesign the Nav bar for mobile sxcreens */
+    nav {
+        margin: 0 auto;
+        margin-bottom: 50px;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 10px 20px;
+        line-height: 30px;
+        position: relative;
+        display: flex;
+        /* separate the nav items horizontally */
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        /* Adds a black bottom border */
+        border-bottom: 4px solid black;
+        background: black;
+        z-index: 1000;
+        color: white;
+    }
+
+    h1 {
+        margin-top: 50px;
+    }
+
+    nav a {
+        color: white;
+    }
+
+    /* MOBILE CONTENT WRAPPER */
+    #wrapper {
+        margin-top: 500px;
+        position: relative;
+        width: 90%;
+        /* Center the wrapper and reset its top margin to zero */
+        margin: 0 auto;
+        /* Prevent the wrapper from floating to one side */
+        float: none;
+    }
+
+    footer {
+        margin-top: 40px;
+        font-size: 12px;
+    }
+
+    /* TWO COLUMN MOBILE IMAGE GRID */
+    .pict {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 8px;
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+
+        margin: 0;
+        padding: 0;
+
+        grid-auto-flow: row;
+        align-items: start;
+    }
+
+    /* Restrain desktop positioning and constrain each grid item. */
+    /* The special character ^ is called a caret. In CSS, when used inside an attribute selector, it means "starts with".active^= - means the attribute must start with the specifieed text */
+    .pict figure,
+    .pict [class^="im"] {
+        grid-column: auto;
+        grid-row: auto;
+
+        width: 100%;
+        min-width: 0;
+        max-width: 100%;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Make images fit inside of their columns */
+    .pict img {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+        box-sizing: border-box;
+    }
+
+    /* Prevent hover effects from creating horizonta; overflow */
+    .pict figure:hover img,
+    .pict .im:hover {
+        transform: none;
+    }
+
+    /* Keep hover text inside the image */
+    .pict .hover-text {
+        max-width: calc(100% - 20px);
+        box-sizing: border-box;
+        white-space: normal;
+    }
+
+    /* Apply on smaller screens */
+    @media (max-width: 600px) {
+        .pict {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 5px;
+        }
+    }
+
+    /* MOBILE STORY LAYOUT */
+    .left_stories {
+        grid-column: 1 / 3;
+        margin: 0;
+        padding: 0;
+    }
+
+    .stories {
+        grid-column: 1 / 3;
+        margin: 0;
+        padding: 0;
+        font-size: 1.2em;
+        line-height: 1.5em;
+    }
+
+    /* MOBILE BOOK GRID */
+
+    .books {
+        grid-template-columns: auto auto;
+        gap: 16px;
+    }
+
+}

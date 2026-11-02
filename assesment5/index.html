@@ -61,9 +61,24 @@
                 </div>
 
                 <div class="menu1">
+
+                    <!--X button to close the nav menu on mobile-->
+                    <button type="button" class="close-menu" aria-label="Close Navigation Menu">
+                        &times</button>
+
                     <a href="story1.html" class="menu1_active">STORIES</a>
                     <a href="#" class="menu1_active">SERIES</a>
                     <a href="index.html" class="menu1_active">ABOUT</a>
+                </div>
+
+                <!--hamburger button:display on mobile and tablet screens-->
+                <div class="hamburger-menu">
+                    <button type="button" aria-label="Open Navigation Menu">
+
+                        <span class="fa fa-bars" aria-hidden="true">
+
+                        </span>
+                    </button>
                 </div>
             </nav>
 
@@ -227,6 +242,32 @@
 
 
     </div>
+    <!--JS that makes the mobile hamburder menu open and close, JS adds or removes a CSS class. The CSS decides what the menu looks like when that class is present/active-->
+
+    <script>
+        //Wait untill html doc is finished loading. This makes sure the button exists before JS tries to select it
+        document.addEventListener('DOMContentLoaded', () => {
+
+            //Find the hamburder button inside the mobile menu container
+            const hamburgerButton = document.querySelector('.hamburger-menu button');
+
+            //find the X button used to close the nav menu
+            const closeButton = document.querySelector('.close-menu');
+
+            //Find the container holding the nav links
+            const menu1 = document.querySelector('.menu1');
+
+            //when the hamburger menu is clicked, add the class "menu-deployed" to the nav menu. Nav the CSS uses this class to make the menu visible
+            hamburgerButton.addEventListener('click', () => {
+                menu1.classList.add('menu-deployed');
+            });
+
+            //when the X button is clicked, remove the "menu deployed so the new menu closes"
+            closeButton.addEventListener('click', () => {
+                menu1.classList.remove('menu-deployed');
+            })
+        });
+    </script>
 
 </body>
 

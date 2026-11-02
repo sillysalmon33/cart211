@@ -20,6 +20,31 @@ body {
     display: block;
 }
 
+/* Hides the hamburger menu class*/
+.hamburger-menu {
+    display: none;
+    /* The mobile media query will display it*/
+    align-items: center;
+    /* vetically cneters its contents whe nusing flexbox*/
+    justify-content: center;
+}
+
+.hamburger-menu button {
+    background: none;
+    /* removes the default bg for the button*/
+    border: none;
+    font-size: 2em;
+    color: gray;
+}
+
+.hamburger-menu button .fa-bars {
+    cursor: pointer;
+}
+
+.close menu {
+    display: none;
+}
+
 /* main content and heading */
 
 #wrapper {
@@ -42,10 +67,23 @@ h2 {
     color: darkgray;
 }
 
+.stories_title {
+    text-align: right;
+    font-size: 3em;
+}
+
 .intro {
     font-size: 2em;
     margin-bottom: 1em;
     text-align: justify;
+}
+
+h3 {
+    margin-top: 0px;
+    margin-bottom: 10px;
+    text-align: left;
+    font-size: 20px;
+    color: darkgray;
 }
 
 /* Nav bar */
@@ -109,6 +147,28 @@ footer {
 footer a {
     text-decoration: none;
     color: black;
+}
+
+/* Story Page layout*/
+/* lef tcolumn of the story page*/
+.left_stories {
+    /* span 5 grid columns*/
+    grid-column: 1/6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Right column containing the story text*/
+.stories {
+    grid-column: 7/13;
+    margin: 0;
+    padding: 0;
+    font-size: 1.2em;
+    line-height: 1.5em;
+}
+
+.stories p {
+    margin-top: 0;
 }
 
 .pict {
@@ -297,4 +357,224 @@ Creates custom grids */
     margin-top: 10px;
     font-size: 1em;
     width: 100%;
+}
+
+/* respomsive Design*/
+/* apply these styles when the screen is 1024px wide or less*/
+
+/* Apply these styles when the screen is 1024px wide or less */
+@media (max-width: 1024px) {
+
+    /* Show the Hamburger menu on smaller screens */
+    .hamburger-menu {
+        display: flex;
+        align-items: center;
+    }
+
+    /* Set mobile menu link colors and decorations */
+    .menu1 a,
+    .menu1 a:hover {
+        text-decoration: none;
+        color: gray;
+        background-color: transparent;
+    }
+
+    /* Hide the menu until it is opened */
+    .menu1 {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: white;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* place the menu above most page content */
+        z-index: 1000;
+    }
+
+    /* Make each mobile menu link easier to tap */
+    .menu1 a {
+        padding: 20px;
+    }
+
+    /* Display the close menu button */
+    .close-menu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: 2em;
+        color: gray;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+
+    /* Apply this class when the mobile menu is opened */
+    .menu-deployed {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        /* Fill the viewport height */
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: white;
+        z-index: 1000;
+        padding-top: 50px;
+    }
+
+    /* Highlight the active menu link */
+    .menu1 .active {
+        color: black;
+    }
+
+    /* Remove any grid-column placement from the hamburger */
+    .hamburger-menu {
+        /* let the browser position it automatically in a grid */
+        grid-column: auto;
+    }
+
+    button {
+        border-width: 0px;
+        background-color: white;
+    }
+
+    /* Redesign the Nav bar for mobile sxcreens */
+    nav {
+        margin: 0 auto;
+        margin-bottom: 50px;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 10px 20px;
+        line-height: 30px;
+        position: relative;
+        display: flex;
+        /* separate the nav items horizontally */
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        /* Adds a black bottom border */
+        border-bottom: 4px solid black;
+        background: black;
+        z-index: 1000;
+        color: white;
+    }
+
+    h1 {
+        margin-top: 50px;
+    }
+
+    nav a {
+        color: white;
+    }
+
+    /* MOBILE CONTENT WRAPPER */
+    #wrapper {
+        margin-top: 500px;
+        position: relative;
+        width: 90%;
+        /* Center the wrapper and reset its top margin to zero */
+        margin: 0 auto;
+        /* Prevent the wrapper from floating to one side */
+        float: none;
+    }
+
+    footer {
+        margin-top: 40px;
+        font-size: 12px;
+    }
+
+    /* TWO COLUMN MOBILE IMAGE GRID */
+    .pict {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 8px;
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+
+        margin: 0;
+        padding: 0;
+
+        grid-auto-flow: row;
+        align-items: start;
+    }
+
+    /* Restrain desktop positioning and constrain each grid item. */
+    /* The special character ^ is called a caret. In CSS, when used inside an attribute selector, it means "starts with".active^= - means the attribute must start with the specifieed text */
+    .pict figure,
+    .pict [class^="im"] {
+        grid-column: auto;
+        grid-row: auto;
+
+        width: 100%;
+        min-width: 0;
+        max-width: 100%;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Make images fit inside of their columns */
+    .pict img {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+        box-sizing: border-box;
+    }
+
+    /* Prevent hover effects from creating horizonta; overflow */
+    .pict figure:hover img,
+    .pict .im:hover {
+        transform: none;
+    }
+
+    /* Keep hover text inside the image */
+    .pict .hover-text {
+        max-width: calc(100% - 20px);
+        box-sizing: border-box;
+        white-space: normal;
+    }
+
+    /* Apply on smaller screens */
+    @media (max-width: 600px) {
+        .pict {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 5px;
+        }
+    }
+
+    /* MOBILE STORY LAYOUT */
+    .left_stories {
+        grid-column: 1 / 3;
+        margin: 0;
+        padding: 0;
+    }
+
+    .stories {
+        grid-column: 1 / 3;
+        margin: 0;
+        padding: 0;
+        font-size: 1.2em;
+        line-height: 1.5em;
+    }
+
+    /* MOBILE BOOK GRID */
+
+    .books {
+        grid-template-columns: auto auto;
+        gap: 16px;
+    }
+
 }
