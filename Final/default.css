@@ -1,0 +1,85 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    /* background color */
+    padding: 20px 20px;
+    /* background color size */
+    color: white;
+    font-family: sans-serif;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover {
+    color: darkmagenta;
+}
+
+.About {
+    font-size: 2em;
+}
+
+.Company {
+    font-size: 5em;
+    font-style: bold;
+}
+
+.Ad {
+    font-size: 3em;
+    text-align: center;
+}
+
+.Ad2 {
+    font-size: 3em;
+    text-align: center;
+}
+
+.Play_button {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+    font-size: 2em;
+}
+
+.Play_button:hover {
+    color: darkmagenta;
+}
+
+.Play_Square {
+    display: flex;
+    justify-content: center;
+    /* Centers horizontally */
+    align-items: center;
+    /* Centers vertically */
+    border-radius: 25px;
+    background-color: lightskyblue;
+    width: 180px;
+    height: 60px;
+}
+
+/* The parent container must have relative positioning */
+.wrapper {
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+}
+
+/* Force the image to fill the background and sit at the lowest layer */
+.bg-img {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Keeps aspect ratio clean */
+    z-index: -1;
+    object-position: center;
+    /* Pushes the image behind everything else */
+    background-repeat: no-repeat;
+}
