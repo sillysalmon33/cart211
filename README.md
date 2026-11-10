@@ -15,7 +15,7 @@ repository for cart211
 
 # Final
 
-- [Final] (https://sillysalmon33.github.io/cart211/Final/Home.html)
+- [Final](https://sillysalmon33.github.io/cart211/Final/Home.html)
 
 ![image](images/IMG_7719.png)
 ![image2](images/IMG_7704.jpg)
