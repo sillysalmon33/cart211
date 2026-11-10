@@ -161,8 +161,11 @@ nav a:hover {
 #Buttons {
     display: flex;
     text-decoration: none;
-    /* moves next to the right */
-    gap: 1090px;
+    justify-content: space-between;
+    align-items: center;
+    /* Optional: Aligns them perfectly on the vertical center */
+    width: 100%;
+    /* Ensures the container stretches across the screen */
 }
 
 /* Desides where to render the button*/
