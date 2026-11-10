@@ -162,7 +162,7 @@ nav a:hover {
     display: flex;
     text-decoration: none;
     /* moves next to the right */
-    gap: 700px;
+    gap: 1000px;
 }
 
 /* Desides where to render the button*/
