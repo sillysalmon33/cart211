@@ -95,9 +95,55 @@ nav a:hover {
    3. About
    ===================================================== */
 
+#About_Section {
+    font-size: 1.5em;
+}
+
+#About_Section h1 {
+    font-size: 2em;
+    text-align: center;
+    font-weight: bold;
+}
+
+
 /* =====================================================
    4. Game Info
    ===================================================== */
+.Name {
+    font-size: 2em;
+    text-align: center;
+    font-weight: bold;
+}
+
+.Game_TOS {
+    font-size: 2em;
+    text-align: center;
+    font-weight: bold;
+}
+
+#TOS_Button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+
+.Start_TOS {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    /* Styling */
+    background-color: #3498db;
+    color: white;
+    /* Optional: rounds the corners slightly */
+    border-radius: 4px;
+    /* Center the text perfectly inside */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
 
 /* =====================================================
    5. TOS
