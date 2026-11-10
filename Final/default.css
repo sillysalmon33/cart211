@@ -45,6 +45,7 @@ nav a:hover {
     text-align: center;
 }
 
+/* Desides where to render the button*/
 .Play_button {
     display: flex;
     justify-content: center;
@@ -57,6 +58,7 @@ nav a:hover {
     color: darkmagenta;
 }
 
+/*Render text with a rectangle around it*/
 .Play_Square {
     display: flex;
     justify-content: center;
@@ -121,6 +123,7 @@ nav a:hover {
     font-weight: bold;
 }
 
+/* Desides where to render the button*/
 #TOS_Button {
     text-decoration: none;
     display: flex;
@@ -128,7 +131,7 @@ nav a:hover {
     align-items: center;
 }
 
-
+/*Render text with a rectangle around it*/
 .Start_TOS {
     width: 150px;
     height: 75px;
@@ -150,6 +153,91 @@ nav a:hover {
 /* =====================================================
    5. TOS
    ===================================================== */
+.Title {
+    color: black;
+    font-size: 2em;
+}
+
+#Buttons {
+    display: flex;
+    text-decoration: none;
+    /* moves next to the right */
+    gap: 700px;
+}
+
+/* Desides where to render the button*/
+#ButtonR {
+    display: flex;
+    justify-content: right;
+    align-items: rigth;
+    padding-right: 300px;
+}
+
+/*Render text with a rectangle around it*/
+.Button_TextR {
+    color: black;
+    font-size: 2em;
+    text-decoration: none;
+    width: 100px;
+    height: 75px;
+    /* Styling */
+    background-color: #3498db;
+    /* Optional: rounds the corners slightly */
+    border-radius: 4px;
+    /* Center the text perfectly inside */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Desides where to render the button*/
+#ButtonL {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    padding-left: 300px;
+}
+
+/*Render text with a rectangle around it*/
+.Button_TextL {
+    color: black;
+    font-size: 2em;
+    text-decoration: none;
+    width: 120px;
+    height: 75px;
+    text-align: center;
+    /* Styling */
+    background-color: #3498db;
+    /* Optional: rounds the corners slightly */
+    border-radius: 4px;
+    /* Center the text perfectly inside */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Accept_Button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Accept {
+    color: black;
+    font-size: 2em;
+    text-decoration: none;
+    width: 120px;
+    height: 75px;
+    text-align: center;
+    /* Styling */
+    background-color: #3498db;
+    /* Optional: rounds the corners slightly */
+    border-radius: 4px;
+    /* Center the text perfectly inside */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 /* =====================================================
    6. Game
