@@ -162,17 +162,10 @@ nav a:hover {
     display: flex;
     text-decoration: none;
     justify-content: space-between;
-    align-items: center;
-    /* Optional: Aligns them perfectly on the vertical center */
-    width: 100%;
-    /* Ensures the container stretches across the screen */
 }
 
 /* Desides where to render the button*/
 #ButtonR {
-    display: flex;
-    justify-content: right;
-    align-items: rigth;
     padding-right: 300px;
 }
 
@@ -180,7 +173,6 @@ nav a:hover {
 .Button_TextR {
     color: black;
     font-size: 2em;
-    text-decoration: none;
     width: 100px;
     height: 75px;
     /* Styling */
@@ -195,9 +187,6 @@ nav a:hover {
 
 /* Desides where to render the button*/
 #ButtonL {
-    display: flex;
-    justify-content: left;
-    align-items: left;
     padding-left: 300px;
 }
 
@@ -208,7 +197,6 @@ nav a:hover {
     text-decoration: none;
     width: 120px;
     height: 75px;
-    text-align: center;
     /* Styling */
     background-color: #3498db;
     /* Optional: rounds the corners slightly */
