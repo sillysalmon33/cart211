@@ -1,12 +1,12 @@
 /* =====================================================
-   1. NAV
+   1. NAV + Footer
    ===================================================== */
 
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #333;
+    background-color: skyblue;
     /* background color */
     padding: 20px 20px;
     /* background color size */
@@ -20,7 +20,13 @@ nav a {
 }
 
 nav a:hover {
-    color: darkmagenta;
+    color: cornflowerblue;
+}
+
+footer {
+    font-style: italic;
+    font-weight: lighter;
+    min-height: 30px;
 }
 
 /* =====================================================
@@ -129,6 +135,7 @@ nav a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 20px;
 }
 
 /*Render text with a rectangle around it*/
@@ -156,6 +163,7 @@ nav a:hover {
 .Title {
     color: black;
     font-size: 2em;
+    padding-left: 20px;
 }
 
 #Buttons {
@@ -163,6 +171,16 @@ nav a:hover {
     text-decoration: none;
     justify-content: space-between;
 }
+
+/* #Buttons:hover {
+background-color: lightpink;
+    display: flex;
+    text-decoration: none;
+    justify-content: space-between;
+        width: 100px;
+    height: 75px;
+
+} */
 
 /* Desides where to render the button*/
 #ButtonR {
@@ -228,6 +246,19 @@ nav a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.Terms {
+padding-left: 20px;
+}
+
+.Terms p{
+    font-size: 1.2em;
+}
+
+.Terms h1 {
+    font-size: 2em;
+    
 }
 
 /* =====================================================
