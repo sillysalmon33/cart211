@@ -1,10 +1,12 @@
 /* =====================================================
-   1. NAV + Footer
+   1. NAV + Footer + Background
    ===================================================== */
 
 .Nav_Fix {
     margin: 0;
     padding: 0;
+    background: linear-gradient(rgb(43, 133, 185), lightskyblue);
+    background-repeat: no-repeat;
 }
 
 nav {
@@ -33,6 +35,7 @@ footer {
     font-weight: lighter;
     min-height: 30px;
     padding-right: 20px;
+    bottom: 0;
 }
 
 /* =====================================================
