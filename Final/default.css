@@ -338,6 +338,43 @@ background-color: lightpink;
    6. Game
    ===================================================== */
 
+.Final {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.Final_Text {
+    color: black;
+    font-size: 2em;
+    text-decoration: none;
+    width: 120px;
+    height: 75px;
+    text-align: center;
+    /* Styling */
+    background-color: #3498db;
+    /* Optional: rounds the corners slightly */
+    border-radius: 4px;
+    /* Center the text perfectly inside */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Final_Text:hover {
+      background-color: #318dca;
+}
+
+#canvas_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+}
+
+
+
 /* =====================================================
    7. Final
    ===================================================== */
