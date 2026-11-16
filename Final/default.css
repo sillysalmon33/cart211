@@ -114,7 +114,8 @@ footer {
 
 .About_Pics {
     display: grid;
-    grid-template-columns: repeat(12, 1fr)
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin: 20px;
 }
 
 /*Title for flex boxes*/
@@ -150,7 +151,7 @@ footer {
 }
 
 .im3 {
-background-color: #f1f1f1;
+    background-color: #f1f1f1;
     width: 300px;
     height: 500px;
 }
@@ -252,7 +253,7 @@ background-color: #f1f1f1;
 }
 
 .Start_TOS:hover {
-      background-color: #318dca;
+    background-color: #318dca;
 }
 
 
@@ -303,7 +304,7 @@ background-color: lightpink;
 }
 
 .Button_TextR:hover {
-      background-color: #318dca;
+    background-color: #318dca;
 }
 
 /* Desides where to render the button*/
@@ -329,7 +330,7 @@ background-color: lightpink;
 }
 
 .Button_TextL:hover {
-      background-color: #318dca;
+    background-color: #318dca;
 }
 
 .Accept_Button {
@@ -356,7 +357,7 @@ background-color: lightpink;
 }
 
 .Accept:hover {
-      background-color: #318dca;
+    background-color: #318dca;
 }
 
 .Terms {
@@ -401,14 +402,14 @@ background-color: lightpink;
 }
 
 .Final_Text:hover {
-      background-color: #318dca;
+    background-color: #318dca;
 }
 
 #canvas_container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
 }
 
 
