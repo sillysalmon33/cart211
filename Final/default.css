@@ -420,9 +420,24 @@ background-color: lightpink;
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 80vw;
+    height: 60vh;
+    overflow: hidden;
+    /* Prevents scrollbars during rapid resizing */
 }
 
 
+canvas {
+    display: block;
+    /* Removes extra bottom whitespace */
+}
+
+.test {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 /* =====================================================
    7. Final

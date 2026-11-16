@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Responsive p5.js Game</title>
+    <script src="https://cloudflare.com"></script>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #1a1a1a;
+        }
+
+
+        /* The target container div */
+        #game-container {
+            width: 80vw;
+            height: 60vh;
+            border: 2px solid #ffffff;
+            overflow: hidden;
+            /* Prevents scrollbars during rapid resizing */
+
+        }
+
+        canvas {
+            display: block;
+            /* Removes extra bottom whitespace */
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="game-container"></div>
+
+    <script>
+        let container;
+
+        function setup() {
+            container = document.getElementById('game-container');
+
+            // 1. Create canvas matching the div's initial dimensions
+            let cnv = createCanvas(container.clientWidth, container.clientHeight);
+
+            // 2. Attach the canvas inside the div
+            cnv.parent('game-container');
+
+            // 3. Watch for any size changes to the div itself
+            const resizeObserver = new ResizeObserver(() => {
+                resizeCanvas(container.clientWidth, container.clientHeight);
+            });
+            resizeObserver.observe(container);
+        }
+
+        function draw() {
+            background(30, 144, 255);
+
+            // Use relative coordinates (width / height) so game objects scale with the div
+            fill(255);
+            noStroke();
+            circle(width / 2, height / 2, min(width, height) * 0.25);
+        }
+    </script>
+
+</body>
+
+</html>

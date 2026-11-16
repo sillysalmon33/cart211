@@ -25,6 +25,7 @@ let B4 = 0
 let NumberOfBubbles = 0
 let MaxBubbles = 50
 let MyCanvas
+let container
 
 
 
@@ -32,11 +33,25 @@ let MyCanvas
  * createss a 900 by 900 canvas and loads 2 sounds and a
 */
 async function setup() {
-    MyCanvas = createCanvas(900, 500)
-    MyCanvas.parent('canvas_container');
+    //MyCanvas = createCanvas(900, 500)
+    // MyCanvas.parent('canvas_container');
     popsound = await loadSound('assets/pop.mp3')
     sad = await loadSound('assets/sad.mp3')
     Emoji = await loadImage('assets/DustEmoji.gif')
+
+    container = document.getElementById('canvas_container');
+
+    // 1. Create canvas matching the div's initial dimensions
+    let cnv = createCanvas(container.clientWidth, container.clientHeight);
+
+    // 2. Attach the canvas inside the div
+    cnv.parent('canvas_container');
+
+    // 3. Watch for any size changes to the div itself
+    const resizeObserver = new ResizeObserver(() => {
+        resizeCanvas(container.clientWidth, container.clientHeight);
+    });
+    resizeObserver.observe(container);
 }
 
 
@@ -59,7 +74,6 @@ function draw() {
     blowSuperfast()
     //if less than 5 bubbles are left blow 10 bubles super fast to the player cant win
     blowCheat()
-
     //when the number of bubbles is 25 make bubbles spawn slower
     if (NumberOfBubbles > 25) {
         Fast = false
@@ -70,7 +84,7 @@ function draw() {
         textSize(20)
         textAlign(CENTER, TOP)
         fill(255, 255, 255)
-        text("Try to pop all the bubbles", 450, 20)
+        text("Try to pop all the bubbles", width / 2, 10)
         pop()
     }
     //when all the bubbles have been popped and the game has started finish the game and stop bubbles from spawning
@@ -200,3 +214,4 @@ function mousePressed() {
         }
     }
 }
+
