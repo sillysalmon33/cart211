@@ -129,6 +129,7 @@ footer {
 /*text for flex boxes*/
 .About_Pics p {
     padding-left: 5px;
+    padding-right: 5px;
 }
 
 /* size for all the images*/
