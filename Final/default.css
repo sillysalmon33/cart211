@@ -179,8 +179,15 @@ footer {
     font-weight: bold;
 }
 
+.who {
+    display: flex;
+    justify-content: space-between;
+}
+
 .Who p {
-    padding-right: 100px;
+    padding-right: 10px;
+    text-align: right;
+    max-width: 700px;
 }
 
 .What p {
@@ -188,7 +195,9 @@ footer {
 }
 
 .Why p {
-    padding-right: 100px;
+    padding-right: 10px;
+    text-align: right;
+    max-width: 700px;
 }
 
 .im6 {
@@ -215,9 +224,10 @@ footer {
    4. Game Info
    ===================================================== */
 .Name {
-    font-size: 2em;
+    font-size: 1.5em;
     text-align: center;
     font-weight: bold;
+    line-height: 0.20;
 }
 
 .Game_TOS {
@@ -382,7 +392,7 @@ background-color: lightpink;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 30px;
+    padding-top: 10px;
 }
 
 .Final_Text {
@@ -410,7 +420,6 @@ background-color: lightpink;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 10px;
 }
 
 
