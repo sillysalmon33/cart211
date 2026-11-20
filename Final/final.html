@@ -46,6 +46,22 @@
         <!--used to make company name in the center (is just a space) -->
         <div class="nav-item spacer" aria-hidden="true"> </div>
     </nav>
+    <!-- Displays how long the user spend on the game -->
+    <div class="Time">
+        <p>You Spent <span id="MinsT"> </span> Minutes and <span id="SecsT"></span> Seconds</p>
+        <script>
+        //creates a new variable that is just the time saved in sessionstorage
+        const SavedSecs = sessionStorage.getItem('Secs');
+        const SavedMins = sessionStorage.getItem('Mins');
+        //if the time exits display the time
+        if (SavedSecs) {
+      document.getElementById('SecsT').textContent = SavedSecs;
+        }
+        if (SavedMins) {
+      document.getElementById('MinsT').textContent = SavedMins;
+        }
+        </script>
+    </div>
 
     <footer style="text-align: right;">
         <small>©Argus Panoptes, (WIP)</small>

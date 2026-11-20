@@ -26,7 +26,10 @@ let NumberOfBubbles = 0
 let MaxBubbles = 50
 let MyCanvas
 let container
-
+let TotalTime
+let TotalMinutes
+let TotalSeconds
+let totalSec
 
 
 /**
@@ -60,6 +63,16 @@ async function setup() {
 */
 function draw() {
     background(50, 35, 90)
+    //creates a timer for how long the project was running
+    TotalTime = floor(millis() / 1000);
+    let TotalMinutes = floor(TotalTime / 60);
+    let TotalSeconds = TotalTime % 60;
+
+
+    //saves the values to sessionstorage so it persists to the next page but is deleted when the tab is closed
+  window.sessionStorage.setItem('Secs', TotalSeconds)
+  window.sessionStorage.setItem('Mins', TotalMinutes)
+
 
     //creates the bubbles in an array
     for (let bubble of Bubbles) {
