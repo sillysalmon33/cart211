@@ -46,9 +46,41 @@
         <!--used to make company name in the center (is just a space) -->
         <div class="nav-item spacer" aria-hidden="true"> </div>
     </nav>
+
+    <div class="Last_Text">
+        <h3>Wow I bet you had fun, anyway its me the website your on talking directly to <strong>YOU</strong> I'd just thought I'd hive you a reminder of about the Terms and Conditions you definitly read and what you signed</h3>
+        <h2>You agreed to give up:</h2>
+        <p>Your Email, Phone Number, Payment and contact info, IP, Home, Billing, and mailing adresses</p>
+        <p>Allow anybody to use the info you post on this website for any reason without asking or telling you</p>
+        <p>Your Cookies on your device</p>
+        <p>Info about your device. Which is </p>
+    <div class="Device_Info">
+     <p><strong>Operating System / Platform:</strong> <span id="os">Loading...</span></p>
+        <p><strong>Screen Resolution:</strong> <span id="screen">Loading...</span></p>
+        <p><strong>Browser Language:</strong> <span id="language">Loading...</span></p>
+        <p style="font-size: 0;"><strong>Full User-Agent String:</strong> <span id="ua" style="font-size: 0;">Loading...</span></p>
+    <script>
+        // Get the data from built-in browser objects
+        const userAgent = navigator.userAgent;
+        const platform = navigator.userAgentData?.platform || navigator.platform;
+        const screenWidth = screen.width;
+        const screenHeight = screen.height;
+        const language = navigator.language;
+        //Inject the data into the HTML elements
+        document.getElementById('ua').textContent = userAgent;
+        document.getElementById('os').textContent = platform;
+        document.getElementById('screen').textContent = `${screenWidth}x${screenHeight}`;
+        document.getElementById('language').textContent = language;
+    </script>
+    </div>
+    <p>Let your info be used by third parties for things like advertising</p>
+    <p>Let us use info we gained about you from other sources ex:google</p>
+    <p>Create a profile of you</p>
+    <p>Allow your data to be stored anywhere in the world</p>
+    
     <!-- Displays how long the user spend on the game -->
     <div class="Time">
-        <p>You Spent <span id="MinsT"> </span> Minutes and <span id="SecsT"></span> Seconds</p>
+        <p>The amount of time you spend of the game which was: <span id="MinsT"> </span> Minutes and <span id="SecsT"></span> Seconds</p>
         <script>
         //creates a new variable that is just the time saved in sessionstorage
         const SavedSecs = sessionStorage.getItem('Secs');
@@ -61,6 +93,7 @@
       document.getElementById('MinsT').textContent = SavedMins;
         }
         </script>
+    </div>
     </div>
 
     <footer style="text-align: right;">
