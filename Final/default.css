@@ -179,6 +179,10 @@ footer {
     font-weight: bold;
 }
 
+.who h1 {
+    padding-top: 10px;
+}
+
 .who {
     display: flex;
     justify-content: space-between;
