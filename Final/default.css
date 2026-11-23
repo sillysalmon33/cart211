@@ -7,6 +7,7 @@
     padding: 0;
     background: linear-gradient(rgb(43, 133, 185), lightskyblue);
     background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 nav {
@@ -36,6 +37,26 @@ footer {
     min-height: 30px;
     padding-right: 20px;
     bottom: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+
+}
+
+.Fake_Footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding-bottom: 30px;
+}
+
+.Real_Footer {
+    background: white;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
 }
 
 /* =====================================================
@@ -86,11 +107,11 @@ footer {
     height: 60px;
 }
 
-/* The parent container must have relative positioning */
+/* Background */
 .wrapper {
     position: relative;
     width: 100%;
-    min-height: 400px;
+    background-size: cover;
 }
 
 /* Force the image to fill the background and sit at the lowest layer */
@@ -286,6 +307,7 @@ footer {
     display: flex;
     text-decoration: none;
     justify-content: space-between;
+    padding-bottom: 40px;
 }
 
 /* #Buttons:hover {
@@ -353,6 +375,7 @@ background-color: lightpink;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-bottom: 40px;
 }
 
 .Accept {
@@ -453,7 +476,7 @@ canvas {
     padding-left: 20px;
     font-size: 1.2em;
 
-   }
+}
 
 .Time {
     font-size: 1.2em;
