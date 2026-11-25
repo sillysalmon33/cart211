@@ -492,6 +492,55 @@ canvas {
 
 @media (max-width: 480px) {
 
+
+    /*Makes Nav not go off screen*/
+    .Nav {
+        display: flexbox;
+        padding: 5px;
+    }
+
+    .About {
+        text-align: left;
+    }
+
+    .Company {
+        font-size: 3em;
+        text-align: center;
+    }
+
+    /* makes about section not go off screen and makes it vertical instead*/
+
+    #About_Section {
+        flex-direction: column;
+        max-width: 100%;
+        height: auto;
+    }
+
+    #About_Section p {
+        display: inline;
+        padding: 0;
+        text-align: center;
+    }
+
+    .im6 {
+        flex-direction: column;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .im7 {
+        /* makes the image render above the text*/
+        flex-direction: column-reverse;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .im8 {
+        flex-direction: column;
+        max-width: 100%;
+        height: auto;
+    }
+
     /*removes some of the previous code so the buttons dont go off screen on mobile */
 
     #Buttons {
