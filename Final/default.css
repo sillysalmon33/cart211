@@ -490,4 +490,29 @@ canvas {
    8. Mobile
    ===================================================== */
 
-@media (max-width: 480px) {}
+@media (max-width: 480px) {
+
+    /*removes some of the previous code so the buttons dont go off screen on mobile */
+
+    #Buttons {
+        display: flexbox;
+        text-decoration: none;
+        padding-bottom: 40px;
+    }
+
+    #ButtonL {
+        padding: 0;
+    }
+
+    .Button_TextL {
+        text-align: left;
+    }
+
+    #ButtonR {
+        padding: 0;
+    }
+
+    .Button_TextR {
+        text-align: right;
+    }
+}
